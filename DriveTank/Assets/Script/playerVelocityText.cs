@@ -1,0 +1,18 @@
+﻿using UnityEngine;
+using System.Collections;
+using UnityEngine.UI;  //テキスト関連のもの
+
+
+public class playerVelocityText : MonoBehaviour {
+
+	// Use this for initialization
+	void Start () {
+	
+	}
+
+    // Update is called once per frame
+    void Update()
+    {
+        this.GetComponent<Text>().text = "速度" +PlayerController.playerVelocity;
+    }
+}
